@@ -13,6 +13,8 @@ public class SpringSecurityConfiguration {
 	public InMemoryUserDetailsManager CreateUserDetailsManager() {
 	
 		
+		
+		@SuppressWarnings("deprecation")
 		UserDetails userdetails = User.withDefaultPasswordEncoder()
 				.username("test")
 				.password("test")
